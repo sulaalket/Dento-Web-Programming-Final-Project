@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation</title>
+  <link rel="stylesheet" href="confirmation.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="dentologo2.png" alt="Logo">
+  </header>
+
+  <div class="container">
+    <div class="confirmation-section">
+      <h2 class="confirmation-title">Confirmation</h2>
+      <div class="confirmation-details">
+        <h3 class="confirmation-details-title">Plan Details</h3>
+        <p><strong>Plan Type:</strong> <span id="plan-type"></span></p>
+        <p><strong>Price:</strong> <span id="price"></span></p>
+      </div>
+    </div>
+
+    <div class="thank-you-message">
+      <h3>Thank You!</h3>
+      <p>Thank you for choosing our service. We appreciate your business.</p>
+    </div>
+
+    <div class="download-button">
+      <a href="data:text/html;charset=utf-8,<!DOCTYPE html>..." download="confirmation.html">Download Invoice</a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      const urlParams = new URLSearchParams(window.location.search);
+
+      
+      const planType = urlParams.get('plan');
+      const price = urlParams.get('price');
+
+      
+      document.getElementById('plan-type').textContent = planType;
+      document.getElementById('price').textContent = price;
+    });
+  </script>
+</body>
+</html>

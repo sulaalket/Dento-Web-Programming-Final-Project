@@ -1,0 +1,600 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #FFFFFF;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a {
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    color: #091E3E;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #06A3DA;
+  }
+  
+  .navbar .nav-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #091E3E;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-icons a:hover {
+    color: #06A3DA;
+  }
+  
+  
+  .navbar .appointment-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+    margin-top: -5px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #F57E57;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .appointment-btn:hover {
+    background-color: #06A3DA;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .content {
+    position: relative;
+    padding-top: 70px; 
+  }
+  
+  .banner {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3; 
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #091E3E; 
+    opacity: 0.9;
+  }
+  
+  .banner-text {
+    font-family: 'Jost', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1; 
+  }
+  
+  .cta-buttons {
+    position: absolute;
+    top: calc(50% + 120px); 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #06A3DA;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-buttons  a:hover {
+    background-color: #F57E57;
+    cursor: pointer;
+  }
+  
+  
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 900px;
+    height: 300px;
+  }
+  
+  
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    width: 900px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Jost', sans-serif;
+  
+  }
+  
+  .info-item {
+    font-family: sans-serif;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family:'Jost', sans-serif;
+  }
+  
+  .info-item:nth-child(1) {
+    background-color: #06A3DA;
+    color: white;
+  }
+  
+  .info-item:nth-child(2) {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .info-item:nth-child(3) {
+    background-color: #fd7e14;
+    color: white;
+  }
+  
+  .appointment-btn {
+    background-color: white;
+    color: #091E3E;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family:'Jost', sans-serif;
+    cursor: pointer;
+  }
+  
+  .appointment-btn:hover{
+    background-color: #F57E57;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+  
+  .quote {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .info-item h3, .info-item h4 {
+    margin: 0;
+  }
+  
+  .info-item p {
+    text-align: center;
+  }
+  
+
+  
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 1100px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Jost', sans-serif;
+  
+  }
+  
+  .about-info-section {
+    width: 700px;
+    height: 500px;
+    background-color: #06A3DA;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .section-title {
+    color: #06A3DA;
+  }
+  
+  
+  .about-text {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .qualities-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .qualities-list li::before {
+    content: "✔";
+    display: inline-block;
+    margin-right: 5px;
+    color: #06A3DA;
+  }
+  
+  .image-section {
+    width: 400px;
+    height: 500px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  .services-section {
+    width: 1100px;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+  }
+  
+  .services-title {
+    text-align: center;
+    color: #091E3E;
+    font-family:'Jost', sans-serif;
+  
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-family:'Jost', sans-serif;
+  
+  }
+  
+  .service {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin: 0 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family:'Jost', sans-serif;
+  
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .service-overlay h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .service:hover .service-image {
+    opacity: 0.5;
+  }
+  
+  .service:hover .service-overlay {
+    opacity: 1;
+  }
+  
+  
+  
+  .quote-section {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quote-container {
+   
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .quote-text {
+    color: 091E3E;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .add-appointment {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-appointment h2 {
+    margin-top: 0;
+  }
+  
+  .add-appointment .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .add-appointment label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-appointment input[type="text"],
+  .add-appointment input[type="date"],
+  .add-appointment input[type="time"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .add-appointment button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #091E3E;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #091E3E;
+    color: white;
+  }
+  
+  td:last-child {
+    text-align: center;
+  }
+  
+  td:last-child button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .signup-section {
+    width: 100%;
+    height: 100px;
+  
+    background-color: #06A3DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .signup-container {
+    text-align: center;
+  }
+  
+  .signup-container p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .signup-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #091E3E;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #065279;
+  }
+  
+  
+  footer {
+    background-color: #091E3E;
+    padding: 20px;
+  }
+  
+  .navbar-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-footer li {
+    margin: 0 10px;
+  }
+  
+  .navbar-footer a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .social-media-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-media-footer li {
+    margin: 0 10px;
+  }
+  
+  .social-media-footer a {
+    color: white;
+  }
+  
+  .social-media-footer i {
+    font-size: 20px;
+  }
+  
+  .social-media-footer i:hover {
+    color: #fd7e14;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+  }
+  
+  
+  
+
+
+/* Bouncing animation */
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply bouncing effect to the table rows */
+  #appointment-table tbody tr {
+    animation: bounce 0.5s ease-in-out 2s;
+  }
+
+  
+  
+
+
+
+
+

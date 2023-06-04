@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dento - Appointment</title>
+  <link rel="stylesheet" href="appointment.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="homeuser.html"><img src="dentologo2.png" alt="Dento Logo"></a>
+      
+    </div>
+    <ul class="nav-links">
+      <li><a href="homeuser.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="#"><i class="fas fa-search"></i></a>
+    </div>
+    <a href="#" class="appointment-btn">Appointment</a>
+  </nav>
+
+
+<div class="main-section">
+ 
+    
+    <div class="appointment-div" id="appointment-form">
+      <h2>Appointment</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option value="service1">Teeth-whitening</option>
+          <option value="service2">Cosmetic Dentistry</option>
+          <option value="service3">Dental Bridges</option>
+          <option value="service4">Dental Surgery</option>
+          <option value="service5">Dental Implant</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" min="07:00" max="22:00">
+      </div>
+      <button  id="submit-btn" type="submit">Send Appointment</button>
+      <div id="confirmation-message"></div>
+      <script src="appointment.js"></script>
+    </div>
+</div>
+
+  <footer>
+    <div class="navbar-footer">
+      <ul>
+        <li><a href="homeuser.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="social-media-footer">
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+    </div>
+    
+    <div class="copyright">
+        &copy;    2023 Your Company. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

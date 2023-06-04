@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dento - Invoice</title>
+  <link rel="stylesheet" href="invoice.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+
+
+  <div class="invoice-section">
+    <h2 class="invoice-title">Invoice</h2>
+    <div class="invoice-container">
+      <div class="invoice-details">
+        <h3 class="invoice-details-title">Invoice Details</h3>
+        <form class="invoice-form" action="confirmation.html?plan=Plan%20A&price=$99.99" method="post">
+        <form class="invoice-form" action="confirmation.html" method="post">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" required>
+          </div>
+          <div class="form-group">
+            <label for="card-number">Credit Card Number</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>
+          <div class="form-group">
+            <label for="expiration">Expiration Date</label>
+            <input type="text" id="expiration" name="expiration" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+          </div>
+          <button type="submit" class="invoice-submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("invoice-form").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+      
+     
+      var formData = new FormData(this);
+      
+     
+      var doc = new jsPDF();
+      
+    
+      var invoiceContent = "Invoice\n\n";
+      
+    
+      invoiceContent += "Name: " + formData.get("first-name") + "\n";
+      invoiceContent += "Last Name: " + formData.get("last-name") + "\n";
+      invoiceContent += "Address: " + formData.get("address") + "\n";
+      
+  
+      doc.text(invoiceContent, 10, 10);
+      
+     
+      doc.save("invoice.pdf");
+    });
+  </script>
+  
+
+</body>
+</html>

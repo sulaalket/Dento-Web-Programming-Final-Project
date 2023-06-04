@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dento - User Home</title>
+  <link rel="stylesheet" href="homeuser.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="homeuser.html"><img src="dentologo2.png" alt="Dento Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="homeuser.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="#"><i class="fas fa-search"></i></a>
+    </div>
+    <a href="appointment.html" class="appointment-btn">Appointment</a>
+  </nav>
+
+  <div class="content">
+    <div class="banner">
+      <img src="dentalBackground.jpg" alt="Dento Services">
+      <h2 class="banner-text">Dento services are a way<br>to simply smile !!!</h2>
+    </div>
+    <div class="cta-buttons">
+      <a href="appointment.html" class="appointment-btn">Appointment</a>
+      <a href="contact.html" class="contact-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="banner">
+     
+    </div>
+    <div class="info-section">
+      <div class="info-item">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri 8:00am - 9:00pm</p>
+        <p>Saturday 8:00am - 7:00pm</p>
+        <p>Sunday 8:00am - 5:00pm</p>
+        <button class="appointment-btn" onclick="redirectToHomePage()">Appointment</button>
+        <script>
+          function redirectToHomePage() {
+            window.location.href = "appointment.html";
+          }
+        </script>
+
+      </div>
+      <div class="info-item">
+        <h1 class="quote">Dentistry is not expensive… <br>neglect is!<h1>      
+
+        </div>
+      <div class="info-item">
+        <h3>Make an Appointment</h3>
+        <p>Importance of regular dental visits.</p>
+        <h4>Phone: +355682611403</h4>
+      </div>
+    </div>
+  </div>
+
+    <div class="about-section">
+      <div class="about-info">
+        <h2 class="section-title">ABOUT <span style = "color:#F57E57;"> US</h2>
+        <h1>We work as a team to guarantee a well-done job!</h1>
+        <p class="about-text"><em>We are your first choice for healthy teeth.</em></p>
+        <ul class="qualities-list">
+          <li>Great Staff</li>
+          <li>1st Clinic of 2023</li>
+          <li>24/7 opened</li>
+        </ul>
+      </div>
+      <div class="image-section">
+        <img src="dentalStaff.jpg" alt="Clinic Image">
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+    <div class="services-section">
+      <h2 class="services-title">SERVICES</h2>
+      <div class="services-container">
+        <div class="service">
+          <img src="teeth-whitening.jpg" alt="Teeth Whitening" class="service-image">
+          <div class="service-overlay">
+            <h3>Teeth Whitening</h3>
+          </div>
+        </div>
+        <div class="service">
+          <img src="cosmetic_dentistry.jpg" alt="Dental Cosmetics" class="service-image">
+          <div class="service-overlay">
+            <h3>Dental Cosmetics</h3>
+          </div>
+        </div>
+        <div class="service">
+          <img src="dentalBridges.jpg" alt="Dental Bridges" class="service-image">
+          <div class="service-overlay">
+            <h3>Dental Bridges</h3>
+          </div>
+        </div>
+        <div class="service">
+          <img src="dentalSurgery.jpg" alt="Dental Surgery" class="service-image">
+          <div class="service-overlay">
+            <h3>Dental Surgery</h3>
+          </div>
+        </div>
+        <div class="service">
+          <img src="dentalImplant.jpg" alt="Dental Implants" class="service-image">
+          <div class="service-overlay">
+            <h3>Dental Implants</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="quote-section">
+    <div class="quote-container">
+      <p class="quote-text"><b>"Life is short. Smile while you still have teeth."</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="main-section">
+  <div class="background-image">
+    <div class="text-overlay">
+      <h2>Book Your Appointment</h2>
+      <p><b>30% OFF</b> for your first appointment!<br> Do Not miss the chance.</p>
+    </div>
+  </div>
+  <div class="appointment-div" id="appointment-form">
+    <h2>Appointment</h2>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address">
+    </div>
+    <div class="form-group">
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option value="service1">Teeth-whitening</option>
+        <option value="service2">Cosmetic Dentistry</option>
+        <option value="service3">Dental Bridges</option>
+        <option value="service4">Dental Surgery</option>
+        <option value="service5">Dental Implant</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+    </div>
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time" min="07:00" max="22:00">
+    </div>
+    <button type="submit">Send Appointment</button>
+  </div>
+</div>
+
+
+<div class="signup-section">
+  <div class="signup-container">
+    <form class="signup-form" action="thankyou.html" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" class="signup-button" href="thankyou.html">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="navbar-footer">
+    <ul>
+      <li><a href="homeuser.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  
+  <div class="social-media-footer">
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+    </ul>
+  </div>
+  
+  <div class="copyright">
+      &copy;    2023 Dento  Alket Sula. All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>
